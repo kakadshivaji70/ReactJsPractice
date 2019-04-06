@@ -1,0 +1,28 @@
+{
+  "name": "reactjs-basics",
+  "version": "1.0.0",
+  "description": "reactjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot --port 5000",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Shivaji",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
